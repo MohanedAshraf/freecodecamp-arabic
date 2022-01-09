@@ -49,6 +49,32 @@ function reversedNum(num) {
 
 دوال الأسهم (Arrow Function) لهم قيمة إرجاع (`return`) ضمنية - عندما يتم كتابة محتوى الدالة في سطر واحد، دون الحاجة إلى الأقواس `{}`.
 
+```js
+const reversedNum = num => parseFloat(num.toString().split('').reverse().join('')) * Math.sign(num)
+
+function reverseNum(num) {
+	return (
+    parseFloat(
+      num
+        .toString()
+        .split('')
+        .reverse()
+        .join('')
+    ) * Math.sign(num)
+  )
+}
+
+console.log(reversedNum(-543.21))
+
+console.log(reversedNum(23000000))
+
+console.log(reversedNum(543.21))
+//النتيجة
+//-12.345
+//32
+//12.345
+```
+
 #### ** دعني أوضح لكَ الخطوات:**
 
 - **حول الرقم(Number) إلى نص(String)**
