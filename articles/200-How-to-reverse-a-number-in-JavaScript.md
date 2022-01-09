@@ -100,7 +100,7 @@ num.join('');
 
 - **استخدام** [**Parse**](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) **لتحويل قيمة الادخال إلى عددًا عشريًا(Float):**
 
-`parseFloat(num)` تحول `num` النص(String) إلى عددًا عشريًا(Float) .
+دالة`parseFloat(num)`  تحول  `num` النص(String) إلى عددًا عشريًا(Float) .
 
 ```js
 // num = '0012345-'
@@ -114,7 +114,7 @@ parseFloat(num);
 
 - **يضاعف الرقم الناتج بأشارة ([sign](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/sign)) الرقم الاصلى — للحفاظ على القيمة السالبة .**
 
-`num * Math.sign(num)` يضاعف الرقم بعلامة الرقم الأصلي.
+يضاعف الرقم بعلامة الرقم الأصلي `num * Math.sign(num)`.
 
 ```js
 // original value of num = -5432100
